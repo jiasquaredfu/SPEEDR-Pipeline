@@ -1,0 +1,25 @@
+[project]
+name = "example-pyproject"
+readme = "README.md"
+description = "Wondrous test project to attempt packaging"
+version = "0.0.1"
+license = "MIT"
+license-files = ["LICENSE.txt"]
+authors = [
+	{name = "jiajia", email = "jjnaturalist@gmail.com"}
+]
+maintainers = [
+	{name = "jiajia", email = "jjnaturalist@gmail.com"}
+]
+requires-python = ">=3.10"
+dependencies = [
+    	"numpy ~= 1.26",
+	"pandas",
+]
+keywords = ["packaging", "practice", "jia squared",]
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+        "setuptools",
+]
+   
