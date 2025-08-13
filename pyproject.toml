@@ -1,25 +1,30 @@
 [project]
-name = "example-pyproject"
+name = "speedr-pipeline"
 readme = "README.md"
-description = "Wondrous test project to attempt packaging"
-version = "0.0.1"
+description = "SPEEDR Pipeline for ML-guided directed protein evolution on PETase."
+version = "0.1.0"
 license = "MIT"
 license-files = ["LICENSE.txt"]
 authors = [
-	{name = "jiajia", email = "jjnaturalist@gmail.com"}
+	{name = "Dawning (JiaJia) Fu", email = "dawningjiaxi.fu@wyss.harvard.edu"}
 ]
 maintainers = [
-	{name = "jiajia", email = "jjnaturalist@gmail.com"}
+	{name = "Dawning (JiaJia) Fu", email = "dawningjiaxi.fu@wyss.harvard.edu"}
 ]
 requires-python = ">=3.10"
 dependencies = [
-    	"numpy ~= 1.26",
+    "numpy ~= 1.26",
 	"pandas",
+	"jupyter",
+	"scikit-learn",
 ]
-keywords = ["packaging", "practice", "jia squared",]
+keywords = ["machine learning", "gaussian", "mutation",]
 [build-system]
 build-backend = "setuptools.build_meta"
 requires = [
-        "setuptools",
+  "setuptools",
 ]
-   
+[project.optional-dependencies]
+docs = [
+  "mkdocs-material",
+]   
